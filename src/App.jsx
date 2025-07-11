@@ -10,7 +10,7 @@ const OSWEBWebsite = () => {
       name: "Ofonime Ufot",
       role: "Founder",
       bio: "Blockchain enthusiast and graphics designer. Leading OSWEB's vision to onboard enthusiasts, democratize Web3 development and make blockchain technology accessible to everyone.",
-      avatar: "/src/assets/images/ofon.jpg",
+      avatar: "/images/ofon.jpg",
       social: {
         twitter: "https://x.com/ofonimeufot139",
         telegram: "https://t.me/ofonimeufot139",
@@ -22,7 +22,7 @@ const OSWEBWebsite = () => {
       name: "Lord Herrschaft",
       role: "Co-Founder",
       bio: "Full-stack developer, Web3 educator and upcoming smart contract architect. Passionate about crafting insightful content and building secure, scalable Web3 infrastructure.",
-      avatar: "src/assets/images/herr.png",
+      avatar: "/images/herr.png",
       social: {
         twitter: "https://x.com/Herrschaft99945",
         telegram: "https://t.me/Herrschaft77",
@@ -34,7 +34,7 @@ const OSWEBWebsite = () => {
       name: "Pato Wizz",
       role: "Co-Founder",
       bio: "Content Creator and long time contributor in the web3 ecosystem. Dedicated to fostering inclusive spaces where buiiders, learners and curious minds can learn, collaborate, and shape the future of decentralized technology.",
-      avatar: "src/assets/images/pato.jpg",
+      avatar: "/images/pato.jpg",
       social: {
         twitter: "https://x.com/Pato_wizz",
         telegram: " https://t.me/Patowizzofficial",
