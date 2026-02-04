@@ -25,7 +25,7 @@ const TeamCard = ({ member, index }) => (
                 {member.name[0]}
             </div>
 
-            <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                 <div className="flex gap-4">
                     <a href={member.social.twitter} className="text-white hover:text-primary"><SiX /></a>
                     <a href={member.social.telegram} className="text-white hover:text-primary"><SiTelegram /></a>
