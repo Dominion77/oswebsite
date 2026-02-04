@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 export const About = () => {
     return (
         <section id="about" className="py-32 px-6 relative overflow-hidden">
-            {/* Background elements */}
             <div className="absolute right-0 top-1/2 -translate-y-1/2 w-96 h-96 bg-primary/5 blur-[100px] rounded-full pointer-events-none" />
 
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

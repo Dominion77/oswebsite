@@ -8,10 +8,9 @@ const TeamCard = ({ member, index }) => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: index * 0.1 }}
-        className="group relative bg-[#111116] border border-white/10 rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300"
+        className="group relative bg-[#111116] border border-white/10 rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 w-full max-w-[290px]"
     >
         <div className="aspect-square w-full overflow-hidden bg-white/5 relative">
-            {/* Mock Image Gradient if no image loads, or use the path provided */}
             <img
                 src={member.avatar}
                 alt={member.name}
@@ -26,7 +25,6 @@ const TeamCard = ({ member, index }) => (
                 {member.name[0]}
             </div>
 
-            {/* Overlay */}
             <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                 <div className="flex gap-4">
                     <a href={member.social.twitter} className="text-white hover:text-primary"><SiX /></a>
@@ -71,7 +69,7 @@ export const Team = () => {
             name: "Pato Wizz",
             role: "Co-Founder",
             bio: "Content Creator and contributor in the web3 ecosystem. Dedicated to fostering inclusive spaces.",
-            avatar: "/images/pato.jpg",
+            avatar: "/images/pato2.jpg",
             social: {
                 twitter: "https://x.com/Pato_wizz",
                 telegram: "https://t.me/Patowizzofficial",
@@ -88,7 +86,7 @@ export const Team = () => {
                     <p className="text-gray-400 max-w-2xl mx-auto">The passionate individuals driving OSWEB's mission to revolutionize the Web3 ecosystem.</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="flex flex-wrap justify-center gap-8">
                     {teamMembers.map((member, idx) => (
                         <TeamCard key={idx} member={member} index={idx} />
                     ))}

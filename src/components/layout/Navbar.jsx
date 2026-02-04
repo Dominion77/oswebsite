@@ -33,7 +33,6 @@ export const Navbar = () => {
                     OS<span className="text-primary">WEB</span>
                 </a>
 
-                {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-8">
                     {navLinks.map((link) => (
                         <a
@@ -54,7 +53,6 @@ export const Navbar = () => {
                     </a>
                 </div>
 
-                {/* Mobile Menu Button */}
                 <button
                     className="md:hidden text-white"
                     onClick={() => setIsOpen(!isOpen)}
@@ -63,7 +61,6 @@ export const Navbar = () => {
                 </button>
             </div>
 
-            {/* Mobile Nav */}
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
